@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<div>
+	<br/>
+  Judul<br><input type="text"[(ngModel)]="judul"/><br>
+  Isi<br/><input type="text"[(ngModel)]="isi"/><br>
+  Date<br><input type="date"[(ngModel)]="date" value="2021-03-02"/><br>
+	<button (click)="submit()">Submit</button>
+</div>
+<div>
+	<br>
+	<button (click)="halaman2()">halaman2</button>
+	<router-outlet></router-outlet>
+</div>
